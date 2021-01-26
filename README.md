@@ -1,4 +1,4 @@
-#SQL COMMANDS FROM COMMAND PROMPT
+**SQL COMMANDS FROM COMMAND PROMPT**
 
 *cd command to change the directory*
 
@@ -8,62 +8,62 @@ C:\>cd xampp/mysql/bin
 
 C:\xampp\mysql\bin>mysql -u root -p -h localhost
 
-#HOW TO SHOW DATABASES
+**HOW TO SHOW DATABASES**
 
 MariaDB [(none)]> show databases;
 
-#how to create database with particular name
+**How to create database with particular name**
 
 MariaDB [(none)]> create database youtubestu;
 
-#HOW TO DELETE ANY DATABASES
+**HOW TO DELETE ANY DATABASES**
 
 MariaDB [(none)]> DROP database youtubestu;
 
-#HOW TO CHANGE DATABASES
+**HOW TO CHANGE DATABASES**
 MariaDB [(none)]> use youtubestu;
 Database changed
 
-#HOW TO SELECT DATABASES
+**HOW TO SELECT DATABASES**
 MariaDB [youtubestu]> select database();
 
 
-#HOW TO CREATE TABLE STUDENTS(TABLE NAME)
+**HOW TO CREATE TABLE STUDENTS(TABLE NAME)**
 
 MariaDB [youtubestu]> create table students
     -> (
     -> name varchar(55),
     -> age int
     -> );
-#HOW TO DDESCRIBE A TABLE
+**HOW TO DDESCRIBE A TABLE**
 
 MariaDB [youtubestu]> desc students
 
-#HOW TO SHOW COLUMNS OF TABLE
+**HOW TO SHOW COLUMNS OF TABLE**
 
 MariaDB [youtubestu]> show columns from studentsdemo;
 
-#HOW TO DELETE A TABLE FROM DATABASE
+**HOW TO DELETE A TABLE FROM DATABASE**
 
 MariaDB [youtubestu]> drop table studentsdemo;
 
-#HOW TO SHOW TABLES
+**HOW TO SHOW TABLES**
 
 MariaDB [youtubestu]> show tables;
 
-#HOW TO INSERT INTO A TABLE
+**HOW TO INSERT INTO A TABLE**
 
 MariaDB [youtubestu]> insert into studentdiff
     -> (id, name, class)
     -> values(1, 'vinod' , 5);
 Query OK, 1 row affected (0.150 sec)
 
-#HOW TO SHOW THE TABLE
+**HOW TO SHOW THE TABLE**
 
 MariaDB [youtubestu]> select * from studentdiff;
 
 
-#WHAT IS NOT NULL DATA IN TABLE
+**WHAT IS NOT NULL DATA IN TABLE**
 *NULLmeans that the value is not known of a field
 
 MariaDB [youtubestu]> create table stunull
@@ -74,7 +74,7 @@ MariaDB [youtubestu]> create table stunull
 Query OK, 0 rows affected (0.391 sec)
 
 
-#HOW TO SET DEFAULT VALUES IN THE TABLE
+**HOW TO SET DEFAULT VALUES IN THE TABLE**
 MariaDB [youtubestu]> create table studef
     -> (
     -> id int not null default 0,
@@ -82,16 +82,16 @@ MariaDB [youtubestu]> create table studef
     -> );
 Query OK, 0 rows affected (0.465 sec)
 
-#HOW TO NEW FIELD IN TEH TABLE
+**HOW TO NEW FIELD IN TEH TABLE
 
 MariaDB [youtubestu]> insert into studef() values ();
 Query OK, 1 row affected (0.045 sec)
 
-#HOW TO NEW FIELD IN THE TABLE BY USING ALTER TABLE
+**HOW TO NEW FIELD IN THE TABLE BY USING ALTER TABLE**
 
 MariaDB [youtubestu]> alter table studef ADD class int;
 
-#WHAT IS PRIMARY KEY IN THE TABLE
+**WHAT IS PRIMARY KEY IN THE TABLE**
 
 MariaDB [youtubestu]> CREATE TABLE stud_unique
     -> (
@@ -101,7 +101,7 @@ MariaDB [youtubestu]> CREATE TABLE stud_unique
     -> PRIMARY KEY (stud_id)
     -> );
 
-#HOW TO AUTO INCREMENT IN THE TABLE
+**HOW TO AUTO INCREMENT IN THE TABLE**
 
 MariaDB [youtubestu]> CREATE TABLE stud_auto
     -> (
