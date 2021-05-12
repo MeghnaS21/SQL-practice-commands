@@ -1,3 +1,4 @@
+
 **SQL COMMANDS FROM COMMAND PROMPT**
 
 *cd command to change the directory*
