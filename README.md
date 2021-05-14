@@ -1,4 +1,11 @@
+Query information_schema with SELECT
 
+information_schema is a meta-database that holds information about your current database. information_schema has multiple tables you can query with the known SELECT * FROM syntax:
+
+    tables: information about all tables in your current database
+    columns: information about all columns in all of the tables in your current database 
+
+=============================================================
 **SQL COMMANDS FROM COMMAND PROMPT**
 
 *cd command to change the directory*
