@@ -10,112 +10,116 @@ Information_schema is a meta-database that holds information about your current 
 
 ## SQL COMMANDS FROM COMMAND PROMPT
 
-*cd command to change the directory*
+- **cd** command to change the directory
 
-cd../..
+  > cd../..
 
-C:\>cd xampp/mysql/bin
+  > cd xampp/mysql/bin
 
-C:\xampp\mysql\bin>mysql -u root -p -h localhost
+  > mysql -u root -p -h localhost
 
-**HOW TO SHOW DATABASES**
+## HOW TO SHOW DATABASES
 
-_show databases;_
+  > show databases;
 
-**How to create database with particular name**
+## HOW TO CREATE DATABASE WITH PARTICULAR NAME
 
-_create database youtubestu;_
+  > create database youtubestu;
 
-**HOW TO DELETE ANY DATABASES**
+## HOW TO DELETE ANY DATABASES
 
-_DROP database youtubestu;_
+  > DROP database youtubestu;
+  
+## HOW TO CHANGE DATABASES
 
-**HOW TO CHANGE DATABASES**
-
-_use youtubestu;_
-
-
-**HOW TO SELECT DATABASES**
-_select database();_
+  > use youtubestu;
 
 
-**HOW TO CREATE TABLE STUDENTS(TABLE NAME)**
+## HOW TO SELECT DATABASES
+   
+  > select database();
 
-_create table students_
-    -> (
-    -> name varchar(55),
-    -> age int
+
+## HOW TO CREATE TABLE STUDENTS(TABLE NAME)
+
+  > create table students <br>
+    -> ( <br>
+    -> name varchar(55), <br>
+    -> age int <br>
     -> );
-**HOW TO DDESCRIBE A TABLE**
+  
+## HOW TO DESCRIBE A TABLE
 
-_desc students_
+   > desc students
 
-**HOW TO SHOW COLUMNS OF TABLE**
+## HOW TO SHOW COLUMNS OF TABLE
 
-_show columns from studentsdemo;_
+   > show columns from studentsdemo;
 
-**HOW TO DELETE A TABLE FROM DATABASE**
+## HOW TO DELETE A TABLE FROM DATABASE
 
-_drop table studentsdemo;_
+   > drop table studentsdemo;
 
-**HOW TO SHOW TABLES**
+## HOW TO SHOW TABLES
 
-_show tables;_
+   > show tables;
 
-**HOW TO INSERT INTO A TABLE**
+## HOW TO INSERT INTO A TABLE
 
-_insert into studentdiff_
-    -> (id, name, class)
+   > insert into studentdiff <br>
+    -> (id, name, class) <br>
     -> values(1, 'vinod' , 5);
 
 
-**HOW TO SHOW THE TABLE**
+## HOW TO SHOW THE TABLE**
 
-_select * from studentdiff;_
+   > select * from studentdiff;
 
 
-**WHAT IS NOT NULL DATA IN TABLE**
-_NULLmeans that the value is not known of a field_
+## WHAT IS NOT NULL DATA IN TABLE
 
-_create table stunull_
-    -> (
-    -> id int not null,
-    -> name varchar(55) not null
+   > NULLmeans that the value is not known of a field
+
+   > create table stunull <br>
+    -> ( <br>
+    -> id int not null, <br>
+    -> name varchar(55) not null <br>
     -> );
 
-**HOW TO SET DEFAULT VALUES IN THE TABLE**
-_create table studef_
-    -> (
-    -> id int not null default 0,
-    -> name varchar(55) not null default 'unnamed'
+## HOW TO SET DEFAULT VALUES IN THE TABLE
+
+   > create table studef <br>
+    -> ( <br>
+    -> id int not null default 0, <br>
+    -> name varchar(55) not null default 'unnamed' <br>
     -> );
 
 
-**HOW TO NEW FIELD IN TEH TABLE
+## HOW TO NEW FIELD IN TEH TABLE
 
-_insert into studef() values ();_
+   > insert into studef() values ();
 _Query OK, 1 row affected (0.045 sec)_
 
-**HOW TO NEW FIELD IN THE TABLE BY USING ALTER TABLE**
+## HOW TO NEW FIELD IN THE TABLE BY USING ALTER TABLE
 
-_alter table studef ADD class int;_
+   > alter table studef ADD class int;
 
-**WHAT IS PRIMARY KEY IN THE TABLE**
+## WHAT IS PRIMARY KEY IN THE TABLE
 
-_CREATE TABLE stud_unique_
-    -> (
-    -> stud_id INT NOT NULL,
-    -> name VARCHAR(55),
-    -> age INT,
-    -> PRIMARY KEY (stud_id)
+   > CREATE TABLE stud_unique <br>
+    -> ( <br>
+    -> stud_id INT NOT NULL, <br>
+    -> name VARCHAR(55), <br>
+    -> age INT, <br>
+    -> PRIMARY KEY (stud_id) <br>
     -> );
 
-**HOW TO AUTO INCREMENT IN THE TABLE**
+## HOW TO AUTO INCREMENT IN THE TABLE
 
-_CREATE TABLE stud_auto_
-    -> (
-    -> stud_id INT NOT NULL AUTO_INCREMENT,
-    -> name VARCHAR(100),
-    -> age INT,
-    -> PRIMARY KEY (stud_id)
+   > CREATE TABLE stud_auto_ <br>
+    -> ( <br>
+    -> stud_id INT NOT NULL AUTO_INCREMENT, <br>
+    -> name VARC(100), <br>
+    -> age INT, <br>
+    -> PRIMARY KEY (stud_id) <br>
     -> );
